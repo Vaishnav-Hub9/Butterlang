@@ -429,5 +429,5 @@ pub fn transpile(program: Program, name: &str) {
 
     fs::write(format!("{name}.c"), genned_code).expect("failed to write result.c");
 
-    compiletobinary(name);
+    compiletobinary(name, 3);
 }
