@@ -500,6 +500,12 @@ void println_int(int64_t x) { printf("\n%d", x); }
 void println_double(double x) { printf("\n%f", x); }
 void println_string(String s) { printf("\n%s", s.data); }
 
+void panic(String msg) {
+    fprintf(stderr, "Runtime panic: %s\n", msg.data);
+    abort();
+}
+
+
 "#
     );
 }
