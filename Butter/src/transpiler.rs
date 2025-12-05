@@ -530,5 +530,5 @@ int main(void) {
 "#
     );
     fs::write("main.c", out);
-    compiletobinary("main", 3);
+    
 }

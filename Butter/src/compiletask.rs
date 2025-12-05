@@ -10,4 +10,9 @@ pub fn compiletobinary(name: &str, Olevel: i8) {
         .arg(format!("{name}"))
         .status()
         .expect("failed to compile");
-    }
+
+}
+
+pub fn runbinary(name: &str) {
+    Command::new(format!("./{name}"));
+}
